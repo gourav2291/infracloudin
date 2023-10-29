@@ -1,0 +1,587 @@
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# [K[root@9aa695902b7d csvserver]# [K[root@9aa695902b7d csvserver]# llll    vi gencsv.sh
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"gencsv.sh" [New File][2;1H[1m[34m~                                                                                                                                                     [3;1H~                                                                                                                                                     [4;1H~                                                                                                                                                     [5;1H~                                                                                                                                                     [6;1H~                                                                                                                                                     [7;1H~                                                                                                                                                     [8;1H~                                                                                                                                                     [9;1H~                                                                                                                                                     [10;1H~                                                                                                                                                     [11;1H~                                                                                                                                                     [12;1H~                                                                                                                                                     [13;1H~                                                                                                                                                     [14;1H~                                                                                                                                                     [15;1H~                                                                                                                                                     [16;1H~                                                                                                                                                     [17;1H~                                                                                                                                                     [18;1H~                                                                                                                                                     [19;1H~                                                                                                                                                     [20;1H~                                                                                                                                                     [21;1H~                                                                                                                                                     [22;1H~                                                                                                                                                     [23;1H~                                                                                                                                                     [1;1H[?25h[?25l[m[24;1H[1m-- INSERT --[m[24;13H[K[1;1H[?25h[?25l#!/usr/bin/env bash
+RANDOM=$$[2;10H[K[3;1Hcount="$1"[3;11H[K[4;1H[[ -z "$count" ]] && c[4;23H[K[4;23H[?25h[?25lount=8[5;1H[K[6;1Hnum=2[6;6H[K[7;1Hwhile [[ ${num} -le ${count} ]][7;32H[K[8;1Hdo[8;3H[K[9;1H    echo $num, $RA[9;19H[K[9;19H[?25h[?25lNDOM
+    (( num = num +1 ))[10;23H[K[11;1Hdone > inputFile[11;17H[K[11;17H[?25h[24;1H[K[11;16H[?25l[?25h[?25l[24;1H:[?2004h[?25hi[?25l[24;2H[K[24;2H[?25h [11;16H[?25l[24;1H[1m-- INSERT --[11;15H[?25h[10;15H[11;15H[mle[?25l[12;1H[K[12;1H[?25h[?25l[1m[34m~                                                                                                                                                     [11;17H[?25h[m[24;1H[K[11;16H[?25l[?25h[?25l[24;1H:[?2004h[?25hwq[?25l[?2004l"gencsv.sh" [New] 11L, 175C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# ls
+csvserver  gencsv.sh
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# ./gencsv.sh 2 8
+bash: ./gencsv.sh: Permission denied
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# sudo ./gencsv.sh 2 8
+bash: sudo: command not found
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# sudo ./gencsv.sh 2 8[5P./gencsv.sh 2 8
+bash: ./gencsv.sh: Permission denied
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# ./gencsv.sh 2 8
+bash: ./gencsv.sh: Permission denied
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# chmod + x .g  ge  /genc[1Px /genc [1@u+[1@+[1@r+x /gen    gencsv.sh 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# chmod u+r+x gencsv.sh [7P./gencsv.sh 2 8
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# ls
+csvserver  gencsv.sh  inputFile
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# cat inputFile 
+2, 27805
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# rm -rf inputFile 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# ls
+csvserver  gencsv.sh
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# vi gencsv.sh 
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"gencsv.sh" 11L, 175C[1;1H#!/usr/bin/env bash
+RANDOM=$$
+count="$1"
+[[ -z "$count" ]] && count=8
+
+num=2
+while [[ ${num} -le ${count} ]]
+do
+    echo $num, $RANDOM
+    (( num = num +1 ))
+done > inputFile
+[1m[34m~                                                                                                                                                     [13;1H~                                                                                                                                                     [14;1H~                                                                                                                                                     [15;1H~                                                                                                                                                     [16;1H~                                                                                                                                                     [17;1H~                                                                                                                                                     [18;1H~                                                                                                                                                     [19;1H~                                                                                                                                                     [20;1H~                                                                                                                                                     [21;1H~                                                                                                                                                     [22;1H~                                                                                                                                                     [23;1H~                                                                                                                                                     [1;1H[?25h[?25l[m[24;1H[1m-- INSERT --[m[24;13H[K[1;1H[?25h
+
+
+
+
+
+
+
+
+
+done > inputFile[?25l[11;16H[K[11;16H[?25h[?25l[11;15H[K[11;15H[?25h[?25l[11;14H[K[11;14H[?25h[?25l[11;13H[K[11;13H[?25h[?25l[11;12H[K[11;12H[?25h[?25l[11;11H[K[11;11H[?25h[?25l[11;10H[K[11;10H[?25h[?25l[11;9H[K[11;9H[?25h[?25l[11;8H[K[11;8H[?25h[?25l[?25h[?25l[11;6H[K[11;6H[?25h[?25l[?25h[?25l[11;4H[K[11;4H[?25h[?25l[11;3H[K[11;3H[?25h[?25l[11;2H[K[11;2H[?25h[?25l[11;1H[K[11;1H[?25h[?25l[1m[34m~                                                                                                                                                     [10;23H[?25h[?25l[m[10;22H[K[10;22H[?25h[?25l[10;21H[K[10;21H[?25h[?25l[?25h[?25l[10;19H[K[10;19H[?25h[?25l[10;18H[K[10;18H[?25h[?25l[?25h[?25l[10;16H[K[10;16H[?25h[?25l[10;15H[K[10;15H[?25h[?25l[10;14H[K[10;14H[?25h[?25l[?25h[?25l[10;12H[K[10;12H[?25h[?25l[?25h[?25l[10;10H[K[10;10H[?25h[?25l[10;9H[K[10;9H[?25h[?25l[10;8H[K[10;8H[?25h[?25l[?25h[?25l[10;6H[K[10;6H[?25h[?25l[10;5H[K[10;5H[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[1m[34m~                                                                                                                                                     [9;23H[?25h[?25l[m[9;22H[K[9;22H[?25h[?25l[9;21H[K[9;21H[?25h[?25l[9;20H[K[9;20H[?25h[?25l[9;19H[K[9;19H[?25h[?25l[9;18H[K[9;18H[?25h[?25l[9;17H[K[9;17H[?25h[?25l[9;16H[K[9;16H[?25h[?25l[?25h[?25l[9;14H[K[9;14H[?25h[?25l[9;13H[K[9;13H[?25h[?25l[9;12H[K[9;12H[?25h[?25l[9;11H[K[9;11H[?25h[?25l[9;10H[K[9;10H[?25h[?25l[?25h[?25l[9;8H[K[9;8H[?25h[?25l[9;7H[K[9;7H[?25h[?25l[9;6H[K[9;6H[?25h[?25l[9;5H[K[9;5H[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[1m[34m~                                                                                                                                                     [8;3H[?25h[?25l[m[8;2H[K[8;2H[?25h[?25l[8;1H[K[8;1H[?25h[?25l[1m[34m~                                                                                                                                                     [7;32H[?25h[?25l[m[7;31H[K[7;31H[?25h[?25l[7;30H[K[7;30H[?25h[?25l[?25h[?25l[7;28H[K[7;28H[?25h[?25l[7;27H[K[7;27H[?25h[?25l[7;26H[K[7;26H[?25h[?25l[7;25H[K[7;25H[?25h[?25l[7;24H[K[7;24H[?25h[?25l[7;23H[K[7;23H[?25h[?25l[7;22H[K[7;22H[?25h[?25l[7;21H[K[7;21H[?25h[?25l[?25h[?25l[7;19H[K[7;19H[?25h[?25l[7;18H[K[7;18H[?25h[?25l[7;17H[K[7;17H[?25h[?25l[?25h[?25l[7;15H[K[7;15H[?25h[?25l[7;14H[K[7;14H[?25h[?25l[7;13H[K[7;13H[?25h[?25l[7;12H[K[7;12H[?25h[?25l[7;11H[K[7;11H[?25h[?25l[7;10H[K[7;10H[?25h[?25l[?25h[?25l[7;8H[K[7;8H[?25h[?25l[7;7H[K[7;7H[?25h[?25l[7;4H[K[7;4H[?25h[?25l[7;3H[K[7;3H[?25h[?25l[7;2H[K[7;2H[?25h[?25l[7;1H[K[7;1H[?25h[?25l[1m[34m~                                                                                                                                                     [6;6H[?25h[?25l[m[6;5H[K[6;5H[?25h[?25l[6;4H[K[6;4H[?25h[?25l[6;3H[K[6;3H[?25h[?25l[6;2H[K[6;2H[?25h[?25l[6;1H[K[6;1H[?25h[?25l[1m[34m~                                                                                                                                                     [5;1H[?25h[?25l~                                                                                                                                                     [4;29H[?25h[?25l[m[4;28H[K[4;28H[?25h[?25l[4;27H[K[4;27H[?25h[?25l[4;26H[K[4;26H[?25h[?25l[4;25H[K[4;25H[?25h[?25l[4;24H[K[4;24H[?25h[?25l[4;23H[K[4;23H[?25h[?25l[4;22H[K[4;22H[?25h[?25l[?25h[?25l[4;20H[K[4;20H[?25h[?25l[4;19H[K[4;19H[?25h[?25l[?25h[?25l[4;17H[K[4;17H[?25h[?25l[4;16H[K[4;16H[?25h[?25l[?25h[?25l[4;14H[K[4;14H[?25h[?25l[4;13H[K[4;13H[?25h[?25l[4;12H[K[4;12H[?25h[?25l[4;11H[K[4;11H[?25h[?25l[4;10H[K[4;10H[?25h[?25l[4;9H[K[4;9H[?25h[?25l[4;8H[K[4;8H[?25h[?25l[4;7H[K[4;7H[?25h[?25l[?25h[?25l[4;5H[K[4;5H[?25h[?25l[4;4H[K[4;4H[?25h[?25l[?25h[?25l[4;2H[K[4;2H[?25h[?25l[4;1H[K[4;1H[?25h[?25l[1m[34m~                                                                                                                                                     [3;11H[?25h[?25l[m[3;10H[K[3;10H[?25h[?25l[3;9H[K[3;9H[?25h[?25l[3;8H[K[3;8H[?25h[?25l[3;7H[K[3;7H[?25h[?25l[3;6H[K[3;6H[?25h[?25l[3;5H[K[3;5H[?25h[?25l[3;4H[K[3;4H[?25h[?25l[3;3H[K[3;3H[?25h[?25l[3;2H[K[3;2H[?25h[?25l[3;1H[K[3;1H[?25h[?25l[1m[34m~                                                                                                                                                     [2;10H[?25h[?25l[m[2;9H[K[2;9H[?25h[?25l[2;8H[K[2;8H[?25h[?25l[2;7H[K[2;7H[?25h[?25l[2;6H[K[2;6H[?25h[?25l[2;5H[K[2;5H[?25h[?25l[2;4H[K[2;4H[?25h[?25l[2;3H[K[2;3H[?25h[?25l[2;2H[K[2;2H[?25h[?25l[2;1H[K[2;1H[?25h[?25l[1m[34m~                                                                                                                                                     [1;20H[?25h[?25l[m[1;19H[K[1;19H[?25h[?25l[1;18H[K[1;18H[?25h[?25l[1;17H[K[1;17H[?25h[?25l[1;16H[K[1;16H[?25h[?25l[?25h[?25l[1;14H[K[1;14H[?25h[?25l[1;13H[K[1;13H[?25h[?25l[1;12H[K[1;12H[?25h[?25l[1;11H[K[1;11H[?25h[?25l[1;10H[K[1;10H[?25h[?25l[1;9H[K[1;9H[?25h[?25l[1;8H[K[1;8H[?25h[?25l[1;7H[K[1;7H[?25h[?25l[1;6H[K[1;6H[?25h[?25l[1;5H[K[1;5H[?25h[?25l[1;4H[K[1;4H[?25h[?25l[1;3H[K[1;3H[?25h[?25l[1;2H[K[1;2H[?25h[?25l[1;1H[K[1;1H[?25h[?25l#!/bin/bash[2;1H[K[3;1Hn=10[3;5H[K[4;1Hfor ((i=0; i<n; ++i)); do[4;26H[K[5;1H [5;2H[K[5;2H[?25h[?25l   echo "$i,$RANDOM"
+done > inputFile[6;17H[K[6;17H[?25h[24;1H[K[6;16H[?25l[?25h[?25l[24;1H:[?2004h[?25hwq[?25l[?2004l"gencsv.sh" 6L, 83C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# vi gencsv.sh ls[Krm -rf inputFile [3Pcat inputFile ls[K./gencsv.sh 2 8
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# ls
+csvserver  gencsv.sh  inputFile
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# cat inputFile 
+0,25035
+1,1956
+2,8769
+3,25259
+4,18841
+5,6902
+6,16748
+7,13944
+8,14318
+9,1346
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# cat inputFile ls[K./gencsv.sh 2 8[2Pvi gencsv.sh ls[Krm -rf inputFile 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# vi gencsv.sh 
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"gencsv.sh" 6L, 83C[1;1H#!/bin/bash
+
+n=10
+for ((i=0; i<n; ++i)); do
+    echo "$i,$RANDOM"
+done > inputFile
+[1m[34m~                                                                                                                                                     [8;1H~                                                                                                                                                     [9;1H~                                                                                                                                                     [10;1H~                                                                                                                                                     [11;1H~                                                                                                                                                     [12;1H~                                                                                                                                                     [13;1H~                                                                                                                                                     [14;1H~                                                                                                                                                     [15;1H~                                                                                                                                                     [16;1H~                                                                                                                                                     [17;1H~                                                                                                                                                     [18;1H~                                                                                                                                                     [19;1H~                                                                                                                                                     [20;1H~                                                                                                                                                     [21;1H~                                                                                                                                                     [22;1H~                                                                                                                                                     [23;1H~                                                                                                                                                     [1;1H[?25h[?25l[m[24;1H[1m-- INSERT --[m[24;13H[K[1;1H[?25h[?25l!/bin/bash[1;11H[K[1;1H[?25h[?25l/bin/bash[1;10H[K[1;1H[?25h[?25lbin/bash[1;9H[K[1;1H[?25h[?25lin/bash[1;8H[K[1;1H[?25h[?25ln/bash[1;7H[K[1;1H[?25h[?25l/bash[1;6H[K[1;1H[?25h[?25lbash[1;5H[K[1;1H[?25h[?25lash[1;4H[K[1;1H[?25h[?25lsh[1;3H[K[1;1H[?25h[?25lh[1;2H[K[1;1H[?25h[?25l[1;1H[K[1;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[1m[34m~                                                                                                                                                     [1;1H[?25h[?25l[1;23r[m[23;1H
+[1;24r[23;1H[1m[34m~                                                                                                                                                     [1;1H[?25h[?25l[m=10[1;4H[K[1;1H[?25h[?25l10[1;3H[K[1;1H[?25h[?25l0[1;2H[K[1;1H[?25h[?25l[1;1H[K[1;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[1m[34m~                                                                                                                                                     [1;1H[?25h[?25l[mor ((i=0; i<n; ++i)); do[1;25H[K[1;1H[?25h[?25lr ((i=0; i<n; ++i)); do[1;24H[K[1;1H[?25h[?25l ((i=0; i<n; ++i)); do[1;23H[K[1;1H[?25h[?25l(i=0; i<n; ++i)); do[1;21H[K[1;1H[?25h[?25li=0; i<n; ++i)); do[1;20H[K[1;1H[?25h[?25l=0; i<n; ++i)); do[1;19H[K[1;1H[?25h[?25l0; i<n; ++i)); do[1;18H[K[1;1H[?25h[?25l; i<n; ++i)); do[1;17H[K[1;1H[?25h[?25l i<n; ++i)); do[1;16H[K[1;1H[?25h[?25li<n; ++i)); do[1;15H[K[1;1H[?25h[?25l<n; ++i)); do[1;14H[K[1;1H[?25h[?25ln; ++i)); do[1;13H[K[1;1H[?25h[?25l; ++i)); do[1;12H[K[1;1H[?25h[?25l ++i)); do[1;11H[K[1;1H[?25h[?25l++i)); do[1;10H[K[1;1H[?25h[?25l+i)); do[1;9H[K[1;1H[?25h[?25li)); do[1;8H[K[1;1H[?25h[?25l)); do[1;7H[K[1;1H[?25h[?25l); do[1;6H[K[1;1H[?25h[?25l; do[1;5H[K[1;1H[?25h[?25l do[1;4H[K[1;1H[?25h[?25ldo[1;3H[K[1;1H[?25h[?25lo[1;2H[K[1;1H[?25h[?25l[1;1H[K[1;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[1m[34m~                                                                                                                                                     [1;1H[?25h[?25l[m   echo "$i,$RANDOM"[1;21H[K[1;1H[?25h[?25l  echo "$i,$RANDOM"[1;20H[K[1;1H[?25h[?25l echo "$i,$RANDOM"[1;19H[K[1;1H[?25h[?25lecho "$i,$RANDOM"[1;18H[K[1;1H[?25h[?25lcho "$i,$RANDOM"[1;17H[K[1;1H[?25h[?25lho "$i,$RANDOM"[1;16H[K[1;1H[?25h[?25lo "$i,$RANDOM"[1;15H[K[1;1H[?25h[?25l "$i,$RANDOM"[1;14H[K[1;1H[?25h[?25l"$i,$RANDOM"[1;13H[K[1;1H[?25h[?25l$i,$RANDOM"[1;12H[K[1;1H[?25h[?25li,$RANDOM"[1;11H[K[1;1H[?25h[?25l,$RANDOM"[1;10H[K[1;1H[?25h[?25l$RANDOM"[1;9H[K[1;1H[?25h[?25lRANDOM"[1;8H[K[1;1H[?25h[?25lANDOM"[1;7H[K[1;1H[?25h[?25lNDOM"[1;6H[K[1;1H[?25h[?25lDOM"[1;5H[K[1;1H[?25h[?25lOM"[1;4H[K[1;1H[?25h[?25lM"[1;3H[K[1;1H[?25h[?25l"[1;2H[K[1;1H[?25h[?25l[1;1H[K[1;1H[?25h[?25ldone > inputFile
+[1m[34m~                                                                                                                                                     [1;1H[?25h[?25l[mone > inputFile[1;16H[K[1;1H[?25h[?25lne > inputFile[1;15H[K[1;1H[?25h[?25le > inputFile[1;14H[K[1;1H[?25h[?25l > inputFile[1;13H[K[1;1H[?25h[?25l> inputFile[1;12H[K[1;1H[?25h[?25l inputFile[1;11H[K[1;1H[?25h[?25linputFile[1;10H[K[1;1H[?25h[?25lnputFile[1;9H[K[1;1H[?25h[?25lputFile[1;8H[K[1;1H[?25h[?25lutFile[1;7H[K[1;1H[?25h[?25ltFile[1;6H[K[1;1H[?25h[?25lFile[1;5H[K[1;1H[?25h[?25lile[1;4H[K[1;1H[?25h[?25lle[1;3H[K[1;1H[?25h[?25le[1;2H[K[1;1H[?25h[?25l[1;1H[K[1;1H[?25h[?25li[?25h[?25l[1;1H[K[1;1H[?25h[?25l#!/bin/bash[2;1H[K[3;1Hn=8[3;4H[K[4;1Hfor ((i=2; i<n; ++i)); do[4;26H[K[5;1H  [5;3H[K[5;3H[?25h[?25l  echo "$i,$RANDOM"
+done > inputFile[6;17H[K[6;17H[?25h[?25l[7;1H[K[7;1H[?25h[?25l[1m[34m~                                                                                                                                                     [6;17H[?25h[m[24;1H[K[6;16H[?25l[?25h[?25l[24;1H:[?2004h[?25hwq[?25l[?2004l"gencsv.sh" 6L, 82C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# vi gencsv.sh rm -rf inputFile [3Pcat inputFile ls[K./gencsv.sh 2 8
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# cat inputFile 
+2,10912
+3,8933
+4,2026
+5,12784
+6,8132
+7,4559
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# [H[2J[root@9aa695902b7d csvserver]# cat inputFile ./gencsv.sh 2 8[2Pvi gencsv.sh rm -rf inputFile 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# vi gencsv.sh 
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"gencsv.sh" 6L, 82C[1;1H#!/bin/bash
+
+n=8
+for ((i=2; i<n; ++i)); do
+    echo "$i,$RANDOM"
+done > inputFile
+[1m[34m~                                                                                                                                                     [8;1H~                                                                                                                                                     [9;1H~                                                                                                                                                     [10;1H~                                                                                                                                                     [11;1H~                                                                                                                                                     [12;1H~                                                                                                                                                     [13;1H~                                                                                                                                                     [14;1H~                                                                                                                                                     [15;1H~                                                                                                                                                     [16;1H~                                                                                                                                                     [17;1H~                                                                                                                                                     [18;1H~                                                                                                                                                     [19;1H~                                                                                                                                                     [20;1H~                                                                                                                                                     [21;1H~                                                                                                                                                     [22;1H~                                                                                                                                                     [23;1H~                                                                                                                                                     [1;1H[?25h[?25l[m[24;1H[1m-- INSERT --[m[24;13H[K[1;1H[?25h[?25l!/bin/bash[1;11H[K[1;1H[?25h[?25l/bin/bash[1;10H[K[1;1H[?25h[?25lbin/bash[1;9H[K[1;1H[?25h[?25lin/bash[1;8H[K[1;1H[?25h[?25ln/bash[1;7H[K[1;1H[?25h[?25l/bash[1;6H[K[1;1H[?25h[?25lbash[1;5H[K[1;1H[?25h[?25lash[1;4H[K[1;1H[?25h[?25lsh[1;3H[K[1;1H[?25h[?25lh[1;2H[K[1;1H[?25h[?25l[1;1H[K[1;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[1m[34m~                                                                                                                                                     [1;1H[?25h[?25l[1;23r[m[23;1H
+[1;24r[23;1H[1m[34m~                                                                                                                                                     [1;1H[?25h[?25l[m=8[1;3H[K[1;1H[?25h[?25l8[1;2H[K[1;1H[?25h[?25l[1;1H[K[1;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[1m[34m~                                                                                                                                                     [1;1H[?25h[?25l[mor ((i=2; i<n; ++i)); do[1;25H[K[1;1H[?25h[?25lr ((i=2; i<n; ++i)); do[1;24H[K[1;1H[?25h[?25l ((i=2; i<n; ++i)); do[1;23H[K[1;1H[?25h[?25l((i=2; i<n; ++i)); do[1;22H[K[1;1H[?25h[?25l(i=2; i<n; ++i)); do[1;21H[K[1;1H[?25h[?25li=2; i<n; ++i)); do[1;20H[K[1;1H[?25h[?25l=2; i<n; ++i)); do[1;19H[K[1;1H[?25h[?25l2; i<n; ++i)); do[1;18H[K[1;1H[?25h[?25l; i<n; ++i)); do[1;17H[K[1;1H[?25h[?25l i<n; ++i)); do[1;16H[K[1;1H[?25h[?25li<n; ++i)); do[1;15H[K[1;1H[?25h[?25l<n; ++i)); do[1;14H[K[1;1H[?25h[?25ln; ++i)); do[1;13H[K[1;1H[?25h[?25l; ++i)); do[1;12H[K[1;1H[?25h[?25l ++i)); do[1;11H[K[1;1H[?25h[?25l++i)); do[1;10H[K[1;1H[?25h[?25l+i)); do[1;9H[K[1;1H[?25h[?25li)); do[1;8H[K[1;1H[?25h[?25l)); do[1;7H[K[1;1H[?25h[?25l); do[1;6H[K[1;1H[?25h[?25l; do[1;5H[K[1;1H[?25h[?25l do[1;4H[K[1;1H[?25h[?25ldo[1;3H[K[1;1H[?25h[?25lo[1;2H[K[1;1H[?25h[?25l[1;1H[K[1;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[1m[34m~                                                                                                                                                     [1;1H[?25h[?25l[m   echo "$i,$RANDOM"[1;21H[K[1;1H[?25h[?25l  echo "$i,$RANDOM"[1;20H[K[1;1H[?25h[?25l echo "$i,$RANDOM"[1;19H[K[1;1H[?25h[?25lecho "$i,$RANDOM"[1;18H[K[1;1H[?25h[?25lcho "$i,$RANDOM"[1;17H[K[1;1H[?25h[?25lho "$i,$RANDOM"[1;16H[K[1;1H[?25h[?25lo "$i,$RANDOM"[1;15H[K[1;1H[?25h[?25l "$i,$RANDOM"[1;14H[K[1;1H[?25h[?25l"$i,$RANDOM"[1;13H[K[1;1H[?25h[?25l$i,$RANDOM"[1;12H[K[1;1H[?25h[?25li,$RANDOM"[1;11H[K[1;1H[?25h[?25l,$RANDOM"[1;10H[K[1;1H[?25h[?25l$RANDOM"[1;9H[K[1;1H[?25h[?25lRANDOM"[1;8H[K[1;1H[?25h[?25lANDOM"[1;7H[K[1;1H[?25h[?25lNDOM"[1;6H[K[1;1H[?25h[?25lDOM"[1;5H[K[1;1H[?25h[?25lOM"[1;4H[K[1;1H[?25h[?25lM"[1;3H[K[1;1H[?25h[?25l"[1;2H[K[1;1H[?25h[?25l[1;1H[K[1;1H[?25h[?25ldone > inputFile
+[1m[34m~                                                                                                                                                     [1;1H[?25h[?25l[mone > inputFile[1;16H[K[1;1H[?25h[?25lne > inputFile[1;15H[K[1;1H[?25h[?25le > inputFile[1;14H[K[1;1H[?25h[?25l > inputFile[1;13H[K[1;1H[?25h[?25l> inputFile[1;12H[K[1;1H[?25h[?25l inputFile[1;11H[K[1;1H[?25h[?25linputFile[1;10H[K[1;1H[?25h[?25lnputFile[1;9H[K[1;1H[?25h[?25lputFile[1;8H[K[1;1H[?25h[?25lutFile[1;7H[K[1;1H[?25h[?25ltFile[1;6H[K[1;1H[?25h[?25lFile[1;5H[K[1;1H[?25h[?25lile[1;4H[K[1;1H[?25h[?25lle[1;3H[K[1;1H[?25h[?25le[1;2H[K[1;1H[?25h[?25l[1;1H[K[1;1H[?25h[?25l#!/bin/bash[2;1H[K[3;1Hn=9[3;4H[K[4;1Hfor ((i=2; i<n; ++i)); do[4;26H[K[5;1H    echo "$i,$RANDOM"[5;22H[K[5;22H[?25h[?25l
+done > inputFile[6;17H[K[6;17H[?25h[24;1H[K[6;16H[?25l[?25h[?25l[24;1H:[?2004h[?25hwq[?25l[?2004l"gencsv.sh" 6L, 82C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# vi gencsv.sh rm -rf inputFile [3Pcat inputFile ./gencsv.sh 2 8
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# ls
+csvserver  gencsv.sh  inputFile
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# cat inputFile 
+2,4015
+3,19724
+4,1322
+5,18280
+6,22008
+7,28535
+8,8869
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# [H[2J[root@9aa695902b7d csvserver]# netstat
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
+Active Bluetooth connections (w/o servers)
+Proto  Destination       Source            State         PSM DCID   SCID      IMTU    OMTU Security
+Proto  Destination       Source            State     Channel
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# netstat tulpn
+usage: netstat [-vWeenNcCF] [<Af>] -r         netstat {-V|--version|-h|--help}
+       netstat [-vWnNcaeol] [<Socket> ...]
+       netstat { [-vWeenNac] -I[<Iface>] | [-veenNac] -i | [-cnNe] -M | -s [-6tuw] } [delay]
+
+        -r, --route              display routing table
+        -I, --interfaces=<Iface> display interface table for <Iface>
+        -i, --interfaces         display interface table
+        -g, --groups             display multicast group memberships
+        -s, --statistics         display networking statistics (like SNMP)
+        -M, --masquerade         display masqueraded connections
+
+        -v, --verbose            be verbose
+        -W, --wide               don't truncate IP addresses
+        -n, --numeric            don't resolve names
+        --numeric-hosts          don't resolve host names
+        --numeric-ports          don't resolve port names
+        --numeric-users          don't resolve user names
+        -N, --symbolic           resolve hardware names
+        -e, --extend             display other/more information
+        -p, --programs           display PID/Program name for sockets
+        -o, --timers             display timers
+        -c, --continuous         continuous listing
+
+        -l, --listening          display listening server sockets
+        -a, --all                display all sockets (default: connected)
+        -F, --fib                display Forwarding Information Base (default)
+        -C, --cache              display routing cache instead of FIB
+        -Z, --context            display SELinux security context for sockets
+
+  <Socket>={-t|--tcp} {-u|--udp} {-U|--udplite} {-S|--sctp} {-w|--raw}
+           {-x|--unix} --ax25 --ipx --netrom
+  <AF>=Use '-6|-4' or '-A <af>' or '--<af>'; default: inet
+  List of possible address families (which support routing):
+    inet (DARPA Internet) inet6 (IPv6) ax25 (AMPR AX.25) 
+    netrom (AMPR NET/ROM) ipx (Novell IPX) ddp (Appletalk DDP) 
+    x25 (CCITT X.25) 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# netstat tulpn [1@-
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# netstat -tulpn
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# [H[2J[root@9aa695902b7d csvserver]# curl http://localhost:9393
+curl: (7) Failed to connect to localhost port 9393: Connection refused
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# docker ls
+bash: docker: command not found
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# ls
+csvserver  gencsv.sh  inputFile
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# ld -- ll csvserver 
+ld: cannot find -ll
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# ld -ll csvserver [1P[1@s
+-rwxrwxr-x 1 root root 8290304 Mar 10  2021 csvserver
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# exit
+exit
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# [K[root@9aa695902b7d csvserver]# [K[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# exitls -ll csvserver d -ll csvserver s[K[7@docker lscurl http://localhost:9393
+curl: (7) Failed to connect to localhost port 9393: Connection refused
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# [H[2J[root@9aa695902b7d csvserver]# docker top 
+bash: docker: command not found
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# docker top command
+bash: docker: command not found
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# docker top command[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1Pd[Ktop
+[?1h=[?25l[H[2J(B[mtop - 08:56:15 up  1:51,  0 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m   2 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m   1 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m100.0 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m    949.7 (B[m[39;49mtotal,(B[m[39;49m[1m     77.2 (B[m[39;49mfree,(B[m[39;49m[1m    237.5 (B[m[39;49mused,(B[m[39;49m[1m    635.0 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m      0.0 (B[m[39;49mtotal,(B[m[39;49m[1m      0.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m    539.6 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+[7m    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                        (B[m[39;49m[K
+(B[m      1 root      20   0   12024   3072   2560 S   0.0   0.3   0:00.03 bash                                                                           (B[m[39;49m[K
+(B[m[1m     19 root      20   0   49080   3456   2944 R   0.0   0.4   0:00.00 top                                                                            (B[m[39;49m[K
+[J[H(B[mtop - 08:56:18 up  1:51,  0 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.3 (B[m[39;49mus,(B[m[39;49m[1m  0.3 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.3 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m    949.7 (B[m[39;49mtotal,(B[m[39;49m[1m     77.2 (B[m[39;49mfree,(B[m[39;49m[1m    237.5 (B[m[39;49mused,(B[m[39;49m[1m    635.1 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m      0.0 (B[m[39;49mtotal,(B[m[39;49m[1m      0.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m    539.7 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+
+
+(B[m[1m     19 root      20   0   49048   3456   2944 R   0.0   0.4   0:00.00 top                                                                            (B[m[39;49m[K
+[J[H(B[mtop - 08:56:21 up  1:51,  0 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m100.0 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+
+
+[K
+
+
+
+[J[H(B[mtop - 08:56:24 up  1:51,  0 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+
+
+
+[K
+
+
+
+[J[H(B[mtop - 08:56:27 up  1:51,  0 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.3 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.7 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+
+
+[K
+
+
+
+[J[H(B[mtop - 08:56:30 up  1:51,  0 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m100.0 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+
+
+[K
+
+
+
+[J[H(B[mtop - 08:56:33 up  1:51,  0 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+
+MiB Mem :(B[m[39;49m[1m    949.7 (B[m[39;49mtotal,(B[m[39;49m[1m     77.2 (B[m[39;49mfree,(B[m[39;49m[1m    237.4 (B[m[39;49mused,(B[m[39;49m[1m    635.1 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+
+[K
+
+
+
+[J[H(B[mtop - 08:56:36 up  1:51,  0 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.7 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.3 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+
+
+[K
+
+
+
+[J[H(B[mtop - 08:56:39 up  1:51,  0 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.3 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.7 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+
+
+[K
+
+
+
+[J[H(B[mtop - 08:56:42 up  1:51,  0 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m100.0 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+
+
+[K
+
+
+
+[J[H(B[mtop - 08:56:45 up  1:51,  0 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+
+
+
+[K
+
+
+
+[J[H(B[mtop - 08:56:48 up  1:52,  0 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+
+
+
+[K
+
+
+
+[J[H(B[mtop - 08:56:51 up  1:52,  0 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.3 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.3 (B[m[39;49mid,(B[m[39;49m[1m  0.3 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+
+
+[K
+
+
+
+[J[H(B[mtop - 08:56:54 up  1:52,  0 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.3 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.7 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m    949.7 (B[m[39;49mtotal,(B[m[39;49m[1m     77.0 (B[m[39;49mfree,(B[m[39;49m[1m    237.6 (B[m[39;49mused,(B[m[39;49m[1m    635.1 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m      0.0 (B[m[39;49mtotal,(B[m[39;49m[1m      0.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m    539.5 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+
+
+
+[J[H(B[mtop - 08:56:57 up  1:52,  0 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+
+MiB Mem :(B[m[39;49m[1m    949.7 (B[m[39;49mtotal,(B[m[39;49m[1m     77.0 (B[m[39;49mfree,(B[m[39;49m[1m    237.6 (B[m[39;49mused,(B[m[39;49m[1m    635.2 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+
+[K
+
+
+
+[J[H(B[mtop - 08:57:00 up  1:52,  0 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.3 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.7 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+
+
+[K
+
+
+
+[J[H(B[mtop - 08:57:03 up  1:52,  0 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m100.0 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+
+
+[K
+
+
+
+[J[H(B[mtop - 08:57:06 up  1:52,  0 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+
+
+
+[K
+
+
+
+[J[H(B[mtop - 08:57:09 up  1:52,  0 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+
+
+MiB Swap:(B[m[39;49m[1m      0.0 (B[m[39;49mtotal,(B[m[39;49m[1m      0.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m    539.6 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+
+(B[m[1m     19 root      20   0   49048   3456   2944 R   0.3   0.4   0:00.01 top                                                                            (B[m[39;49m[K
+(B[m      1 root      20   0   12024   3072   2560 S   0.0   0.3   0:00.03 bash                                                                           (B[m[39;49m[K
+[J[H(B[mtop - 08:57:12 up  1:52,  0 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+
+
+
+[K
+
+(B[m      1 root      20   0   12024   3072   2560 S   0.0   0.3   0:00.03 bash                                                                           (B[m[39;49m[K
+(B[m[1m     19 root      20   0   49048   3456   2944 R   0.0   0.4   0:00.01 top                                                                            (B[m[39;49m[K
+[J[?25l[H(B[mtop - 08:57:14 up  1:52,  0 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+
+
+
+[K
+
+
+
+[J[?25l[H
+
+
+
+
+[K
+
+
+
+[J[?1l>[25;1H
+[?12l[?25h[K]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# ^C
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# [H[2J[root@9aa695902b7d csvserver]# ls
+csvserver  gencsv.sh  inputFile
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# ls --  -ll
+total 8104
+-rwxrwxr-x 1 root root 8290304 Mar 10  2021 csvserver
+-rwxr--r-- 1 root root      82 Oct 29 08:38 gencsv.sh
+-rw-r--r-- 1 root root      53 Oct 29 08:38 inputFile
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# ls -ll[Ktopdocker top command[Kcurl http://localhost:9393exit[Kls -ll csvserver d -ll csvserver s[K[7@docker lscurl http://localhost:9393[12Pnetstat -tulpn[1Ptulpn[Kcat inputFile ls[K./gencsv.sh 2 8[2Pvi gencsv.sh rm -rf inputFile [3Pcat inputFile [3@rm -rf inputFile [4Pvi gencsv.sh rm -rf inputFile [4Pvi gencsv.sh ./gencsv.sh 2 8
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# ./gencsv.sh 2 8[9Pls -ll
+total 8104
+-rwxrwxr-x 1 root root 8290304 Mar 10  2021 csvserver
+-rwxr--r-- 1 root root      82 Oct 29 08:38 gencsv.sh
+-rw-r--r-- 1 root root      54 Oct 29 08:57 inputFile
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# cat inputFile 
+2,28369
+3,28342
+4,4629
+5,8587
+6,23878
+7,15292
+8,17238
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# docker top
+bash: docker: command not found
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# [K[root@9aa695902b7d csvserver]# [K[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# netstat
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
+Active Bluetooth connections (w/o servers)
+Proto  Destination       Source            State         PSM DCID   SCID      IMTU    OMTU Security
+Proto  Destination       Source            State     Channel
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# netstat -tunlp
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# ls
+csvserver  gencsv.sh  inputFile
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# lsnetstat -tunlp[Kdocker topcat inputFile [8Pls -ll./gencsv.sh 2 8[9Pls -ll[Ktopdocker top command[Kcurl http://localhost:9393exit[Kcurl http://localhost:9393
+curl: (7) Failed to connect to localhost port 9393: Connection refused
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# [H[2J[root@9aa695902b7d csvserver]# curl http://localhost:9393     
+curl: (7) Failed to connect to localhost port 80: Connection refused
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# curl http://localhost:9393
+curl: (7) Failed to connect to localhost port 9393: Connection refused
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# curl http://localhost:9393[K:9393ls[Knetstat -tunlp[K -tunlpls[Kcurl http://localhost:9393[K:9393[Ksudo netstat -tulpn
+bash: sudo: command not found
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# sudo netstat -tulpn [1P[1P[1P[1P[1P
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# netstat -ln | grep 8080    9393
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# netstat -ln | grep 9393[9Ptulpn[5@sudo netstat -tulpncurl http://localhost:9393[K:9393[1@-[1@v[1@ 
+* Rebuilt URL to: http://localhost:9393/
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* connect to 127.0.0.1 port 9393 failed: Connection refused
+*   Trying ::1...
+* TCP_NODELAY set
+* Immediate connect fail for ::1: Cannot assign requested address
+*   Trying ::1...
+* TCP_NODELAY set
+* Immediate connect fail for ::1: Cannot assign requested address
+* Failed to connect to localhost port 9393: Connection refused
+* Closing connection 0
+curl: (7) Failed to connect to localhost port 9393: Connection refused
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# curl -v http://localhost:9393[H[2J[root@9aa695902b7d csvserver]# curl -v http://localhost:9393                             systemctl status ufw
+System has not been booted with systemd as init system (PID 1). Can't operate.
+Failed to connect to bus: Host is down
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# systemctl status ufw[1P[1P[1P[1P[1P[1P[1@d[1@i[1@a[1@b[1@l[1@e[1@s
+Failed to disable unit, unit ufw.service does not exist.
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# systemctl status apache2
+System has not been booted with systemd as init system (PID 1). Can't operate.
+Failed to connect to bus: Host is down
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# systemctl status apache2[3Pdisable ufw[1Pstatus ufwcurl -v http://localhost:9393[6Pnetstat -ln | grep 9393[9Ptulpn[5@sudo netstat -tulpncurl http://localhost:9393[K:9393ls[Knetstat -tunlp[Kdocker topcat inputFile [8Pls -ll./gencsv.sh 2 8[9Pls -ll[Ktopdocker top command[Kcurl http://localhost:9393exit[Kls -ll csvserver exit[K    [K[root@9aa695902b7d csvserver]# [K[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# ps aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.3  12128  3072 pts/0    Ss   08:54   0:00 /bin/bash
+root          44  0.0  0.3  44600  3328 pts/0    R+   10:07   0:00 ps aux
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# ps aux[Kps auxsystemctl status apache2[3Pdisable ufwstatus apache2ps aux[K[Khttp://localhost:9393     
+bash: http://localhost: No such file or directory
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# http://localhost:9300
+bash: http://localhost:9300: No such file or directory
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# http://localhost:9300[1@c[1@u[1@r[1@l[1@ 
+curl: (7) Failed to connect to localhost port 9300: Connection refused
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# curl http://localhost:9300    8080
+curl: (7) Failed to connect to localhost port 8080: Connection refused
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# curl http://localhost:8080    9300
+curl: (7) Failed to connect to localhost port 9300: Connection refused
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# curl http://localhost:9300//localhost:[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@1[1@2[1@7[1@.[1@0[1@.[1@0[1@.[1@1
+curl: (7) Failed to connect to 127.0.0.1 port 9300: Connection refused
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# [H[2J[root@9aa695902b7d csvserver]# [K[root@9aa695902b7d csvserver]# [K[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# ss
+Netid            State            Recv-Q            Send-Q                       Local Address:Port                       Peer Address:Port           
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# ss -tuln
+Netid            State            Recv-Q            Send-Q                       Local Address:Port                       Peer Address:Port           
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# curl -o ./part-1-output http://localhost:9393/raw
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to localhost port 9393: Connection refused
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# ls
+csvserver  gencsv.sh  inputFile
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# ls -a
+.  ..  csvserver  gencsv.sh  inputFile
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# mkdir solution
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# ls
+csvserver  gencsv.sh  inputFile  solution
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# history
+    1  vi gencsv.sh
+    2  ls
+    3  ./gencsv.sh 2 8
+    4  sudo ./gencsv.sh 2 8
+    5  ./gencsv.sh 2 8
+    6  ./gencsv.sh 2 8
+    7  chmod u+r+x gencsv.sh 
+    8  ./gencsv.sh 2 8
+    9  ls
+   10  cat inputFile 
+   11  rm -rf inputFile 
+   12  ls
+   13  vi gencsv.sh 
+   14  ./gencsv.sh 2 8
+   15  ls
+   16  cat inputFile 
+   17  rm -rf inputFile 
+   18  vi gencsv.sh 
+   19  ./gencsv.sh 2 8
+   20  cat inputFile 
+   21  rm -rf inputFile 
+   22  vi gencsv.sh 
+   23  ./gencsv.sh 2 8
+   24  ls
+   25  cat inputFile 
+   26  netstat
+   27  netstat tulpn
+   28  netstat -tulpn
+   29  netstat -tulpn
+   30  curl http://localhost:9393
+   31  docker ls
+   32  ls
+   33  ld -ll csvserver 
+   34  ls -ll csvserver 
+   35  exit
+   36  curl http://localhost:9393
+   37  docker top 
+   38  docker top command
+   39  top
+   40  ls
+   41  ls -ll
+   42  ./gencsv.sh 2 8
+   43  ls -ll
+   44  cat inputFile 
+   45  docker top
+   46  netstat
+   47  netstat -tunlp
+   48  ls
+   49  curl http://localhost:9393
+   50  curl http://localhost
+   51  curl http://localhost:9393
+   52  sudo netstat -tulpn
+   53  netstat -tulpn
+   54  netstat -ln | grep 9393
+   55  curl -v http://localhost:9393
+   56  systemctl status ufw
+   57  systemctl disable ufw
+   58  systemctl status apache2
+   59  ps aux
+   60  http://localhost
+   61  http://localhost:9300
+   62  curl http://localhost:9300
+   63  curl http://localhost:8080
+   64  curl http://localhost:9300
+   65  curl http://127.0.0.1:9300
+   66  ss
+   67  ss -tuln
+   68  curl -o ./part-1-output http://localhost:9393/raw
+   69  ls
+   70  ls -a
+   71  mkdir solution
+   72  ls
+   73  history
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# C ^C
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# [K[root@9aa695902b7d csvserver]# [K[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# 
+]0;@9aa695902b7d:/csvserver[root@9aa695902b7d csvserver]# [H[2J[root@9aa695902b7d csvserver]# wget -O ./part-1-output http://localhost:9393/raw
+bash: wget: command not found
